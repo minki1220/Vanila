@@ -5,24 +5,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/clock.css" />
-    <link rel="styeesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/login.css" />
     <link rel="styeesheet" href="css/background.css" />
     <title>Vanila_JavaScript</title>
   </head>
   <body>
-    <form class="hidden" id="login-form" class="login-css">
+    <form class="hidden" id="login-form">
       <input
+        class="login-css"
         required
         maxlength="15"
         type="text"
         placeholder="What is your name?"
       />
-      <input type="submit" value="Log In" />
+      <input class="login-Btn" type="submit" value="Log In" />
     </form>
-    <h2 id="clock">00:00:00</h2>
-    <div id="backgroundImage"></div>
+    <form class="date-clock">
+      <div id="date"></div>
+      <h2 id="clock">00:00:00</h2>
+    </form>
     <h1 class="hidden" id="greeting"></h1>
-
     <form id="todo-form">
       <h3>
         To-Do List<svg
@@ -42,10 +44,9 @@
       </h3>
       <div class="row">
         <input type="text" placeholder="write anything" required />
-        <button>Add</button>
+        <button class="write-Btn">Add</button>
       </div>
-      <ul id="todo-list"</ul>
-      
+      <ul id="todo-list"></ul>
     </form>
     <div id="quote">
       <span></span>
@@ -55,6 +56,20 @@
       <span></span>
       <span></span>
     </div>
+    <form class="link">
+      <a href="https://www.naver.com/" target="_blank">
+        <img src="img/naver.jpg"
+      /></a>
+      <a href="https://www.youtube.com/" target="_blank"
+        ><img src="img/youtube.jpg"
+      /></a>
+      <a href="https://nomadcoders.co/" target="_blank"
+        ><img src="img/nomadcoder.jpg"</a
+      >
+      <a href="https://www.google.com/" target="_blank"
+        ><img src="img/google.jpg"</a
+      >
+    </form>
   </body>
   <script src="js/login.js"></script>
   <script src="js/clock.js"></script>

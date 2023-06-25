@@ -1,14 +1,13 @@
-const images = ["1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg", "5.jpeg"];
+const images = ["0.jpeg", "1.jpeg", "2.jpeg", "3.jpeg", "4.jpeg"];
 
 function changeBackground() {
+  const savedUsername = localStorage.getItem("username");
   let currentImage;
 
-  const savedUsername = localStorage.getItem("username");
   if (savedUsername !== null) {
-    const filteredImages = images.slice(1);
-    currentImage = getRandomImage(filteredImages);
+    currentImage = getRandomImage(images);
   } else {
-    currentImage = "1.jpeg";
+    currentImage = getRandomImage(images.slice(1));
   }
 
   document.body.style.backgroundImage = `url(img/${currentImage})`;
