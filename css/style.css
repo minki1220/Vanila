@@ -1,0 +1,84 @@
+@import "reset.css";
+.hidden {
+  display: none;
+}
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  background: url(img/1.jpeg), url(img/2.jpeg), url(img/3.jpeg), url(img/4.jpeg),
+    url(img/5.jpeg);
+  background-size: cover;
+  background-position: center center;
+  width: 100vw;
+  height: 97vh;
+}
+h2 {
+  display: flex;
+  align-items: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+}
+#login-form {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 100%;
+  color: white;
+  text-align: center;
+}
+#weather {
+  position: absolute;
+  top: 0%;
+  right: 0%;
+}
+#todo-form {
+  width: 100%;
+  max-width: 440px;
+  margin: 100px auto 20px;
+  padding: 40px 30px 70px;
+  border-radius: 10px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.7);
+}
+#todo-form h3 {
+  color: #002765;
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+#todo-form h3 svg {
+  width: 30px;
+  margin-left: 10px;
+}
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #edeef0;
+  border-radius: 30px;
+  padding-left: 20px;
+  margin-bottom: 25px;
+}
+input {
+  flex: 1;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px;
+}
+button {
+  border: none;
+  outline: none;
+  padding: 16px 50px;
+  background: #ff5945;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 40px;
+}
+#todo-list {
+  list-style: none;
+  font-size: 17px;
+  padding: 12px 8px 12px 50px;
+  user-select: none;
+  cursor: pointer;
+}
